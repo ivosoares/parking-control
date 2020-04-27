@@ -17,10 +17,10 @@ function calcParking(hrEntrada, hrPartida) {
         taxa = taxa + 5; // Inicializa a taxa de cobrança da primeira hora somada a taxa de entrada(2 da taxa + 3 da 1 hora)
 
         if (hour >= 1) {
-            if (hour >= 1 && min > 0) {
+            if (hour >= 1 && min > 0) { // Se a hora for maior que 1 hora e tiver contabilizado os minutos calcula a taxa x o valor da hora;
                 var taxaCorrida = 4 * hour;
                 taxa = taxa + taxaCorrida;
-            } else {
+            } else { // se tiver menos de 1hr calcular a taxa com 1 hora a menos.
                 hour = hour - 1;
                 var taxaCorrida = 4 * hour;
                 taxa = taxa + taxaCorrida;
