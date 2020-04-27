@@ -33,7 +33,7 @@ function calcParking(hrEntrada, hrPartida) {
 }
 
 function calc() {
-    var hrEntrada = document.getElementById('segent').value.toString();
-    var hrPartida = document.getElementById('segsai').value.toString();
+    var hrEntrada = document.getElementById('entrada').value.toString();
+    var hrPartida = document.getElementById('saida').value.toString();
     calcParking(hrEntrada, hrPartida);
 }
